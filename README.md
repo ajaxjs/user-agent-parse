@@ -19,7 +19,7 @@ dump(enjson($agent->match));
 ```
 
 # Agent2使用
-第一步：用composer安装**jenssegers/agent**
+第一步：安装**jenssegers/agent**，项目地址：https://github.com/jenssegers/agent
 ```
 composer require jenssegers/agent
 ```
