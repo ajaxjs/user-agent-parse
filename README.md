@@ -1,6 +1,23 @@
 # user-agent-parse
 适合国人用的UserAgent解析库，包含国内外大量浏览器信息。
 
+# 使用
+
+```php
+$agent = new \Agent;
+dump($agent->device());
+// 输出：Mobile
+
+dump($agent->browser());
+// 输出：["Safari","苹果Safari浏览器"]
+
+dump($agent->platform());
+// 输出：Mobile
+
+dump(enjson($agent->match));
+// 输出：{"core":["WebKit"],"browser":["Safari","Chrome"],"platform":["Windows"],"device":["PC"]}
+```
+
 # 浏览器信息
 
 ## 浏览器：
